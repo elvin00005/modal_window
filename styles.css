@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+main{
+    width: 500px;
+    margin: auto;
+}
+
+#myBtn{
+    padding: 5px 10px;
+    margin:  auto;
+    display: block;
+    font-size: 30px;
+    background-color: orange;
+    margin-top: 50px;
+    cursor: pointer;
+
+}
+
+.modal_window{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .8);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%) scale(0);
+    transition: .4s  ease-in-out;
+
+}
+
+.modal_window__body{
+    width: 600px;
+    height: 300px;
+    position: relative;
+    z-index: 2;
+    background-color: rgba(232, 223, 223, 0.8);
+    font-size: 20px;
+
+}
+
+.modal_window.active{
+    transform: translateY(0%) scale(100%);
+
+}
+
+
+.modal_window__body{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 50px 20px;
+}
+
+.modal_window__body >button{
+margin-top: 20px;
+font-size: 15px;
+padding: 0 10px;
+background-color: orange;
+cursor: pointer;
+}
+
+#close{
+    position: absolute;
+    right: 0;
+    top:0;
+    background-color: orange;
+    font-size: 30px;
+    padding: 0 10px;
+    margin: 0;
+    cursor: pointer;
+}
+.p{
+    margin-top: 20px;
+    color: red;
+}
+
+input{
+    font-size: 15px;
+    font-weight: bold;
+}
